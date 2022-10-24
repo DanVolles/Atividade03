@@ -13,7 +13,8 @@ public class Questao1 {
         System.out.println("A tabuada do número " + n + " é: ");
 
         for (int i = 1; i <= 10; i = i + 1) {
-            System.out.println(n + " * " + i + " = " + n * i);
+            int produto = n*i;
+            System.out.println(n + " * " + i + " = " + produto);
         }
     }
 }
