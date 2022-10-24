@@ -4,6 +4,10 @@ public class Questao6 {
 
     static Scanner input = new Scanner(System.in);
     public static void main (String[] args) {
+
+        System.out.println("Aqui vamos calcular o somatório e a média entre 5 números!\n" +
+                "Por favor: ");
+
         System.out.print ("Digite o primeiro número: ");
         int a = input.nextInt();
         System.out.print ("Digite o segundo número: ");
