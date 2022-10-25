@@ -12,6 +12,7 @@ public class Questao3 {
         System.out.println("Por favor, digite o segundo número: ");
         int b = input.nextInt();
 
+        // Dá pra fazer com um só for, tentar depois
         if (a < b) {
 
             if ((a + 1) == b) {

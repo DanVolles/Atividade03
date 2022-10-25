@@ -49,3 +49,35 @@ public class Questao6 {
     }
 
 }
+class Q6Variacao {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int maior = -10000000;
+        int menor = 10000000;
+        int soma = 0;
+        int media = 0;
+        int resto = 0;
+        float mediaFloat = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Digite um número: ");
+            int num = ler.nextInt();
+            if (num > maior) {
+                maior = num;
+            }
+            if (num < menor) {
+                menor = num;
+            }
+            soma = soma + num;
+            media = soma/5;
+            resto = soma % 5;
+            mediaFloat = soma / 5f;
+        }
+        ler.close();
+        System.out.println("Maior = " + maior);
+        System.out.println("Menor = " + menor);
+        System.out.println("Soma = " + soma);
+        System.out.println("Média = " + media);
+        System.out.println("Resto = " + resto);
+        System.out.printf("Média flutuante = %.2f", mediaFloat);
+    }
+}

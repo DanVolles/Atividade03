@@ -31,9 +31,27 @@ public class Questao5 {
     }
 
     private static void lerIdades(int [] idade) {
-        for (int i = 0; i < idade.length; i++) {
-            System.out.printf("Digite a %dª idade: ", i + 1);
+        for (int i = 1; i < idade.length; i++) {
+            System.out.printf("Digite a %dª idade: ", i);
             idade [i] = input.nextInt();
+        }
+    }
+}
+class Q5Variacao {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        int qtMaior = 0;
+        int qtMenor = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Digite a idade");
+            int idade = input.nextInt();
+            if (idade >= 18) {
+                qtMaior++;
+            } else {
+                qtMenor++;
+            }
+            System.out.printf("%s têm mais que 18 anos%n", qtMaior);
+            System.out.printf("%s têm menos que 18 anos%n", qtMenor);
         }
     }
 }

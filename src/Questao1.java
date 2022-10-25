@@ -14,7 +14,7 @@ public class Questao1 {
 
         for (int i = 1; i <= 10; i = i + 1) {
             int produto = n*i;
-            System.out.println(n + " * " + i + " = " + produto);
+            System.out.println(String.format("%s x %s = %s", n, i, produto));
         }
     }
 }

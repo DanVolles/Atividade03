@@ -23,12 +23,12 @@ public class Questao2 {
         for (int i = 1; i <= contador; i = i + 1) {
             System.out.println(frase);
         }
+
+//        int repeticao = 1;
+
+//        while (repeticao <= contador) {
+//            System.out.println(frase);
+//            repeticao = repeticao + 1;
+//        }
     }
 }
-// Pq deu errado?
-//    int repeticao = 1;
-//
-//        while (repeticao >= contador) {
-//                System.out.println(frase);
-//                repeticao = repeticao + 1;
-//                }

@@ -18,11 +18,28 @@ public class Questao4 {
 
             if (palavraSecreta.contentEquals("Java-2022")) {
                 System.out.println("Parabéns! Você acertou a palavra secreta!");
-                System.exit(0);
+                System.exit(0); // pode usar o break; também
             } else {
                 System.out.println("Essa não é a palavra secreta...\n" +
                         "Tente novamente!");
             }
         } while (contar > 0) ;
+    }
+}
+class Q4Variacao {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        String palavra = "";
+        int i = 0;
+        do {
+            i++;
+            System.out.println("Digite a palavra (tentativa " + i + "/5)");
+            palavra = input.nextLine();
+            if (palavra.equals("Java-2022")) {
+                System.out.println("Palavra ok.");
+            } else {
+                System.out.println("Palavra errada");
+            }
+        } while (! palavra.equals("Java-2022") && i < 5);
     }
 }
